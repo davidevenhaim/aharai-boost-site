@@ -146,6 +146,7 @@
     "heading": "Space is limited for the Founding Cohort (Summer 2026).",
     "subheading": "Don't wait. Interviews for the program are starting soon.",
     "successAlert": "Thank you! We will be in touch soon.",
+    "errorAlert": "Something went wrong. Please try again.",
     "form": {
       "placeholders": {
         "fullName": "Full Name",
@@ -154,7 +155,8 @@
         "age": "Age",
         "state": "State"
       },
-      "submit": "Send Me Details"
+      "submit": "Send Me Details",
+      "submitting": "Submitting..."
     }
   },
   "footerCta": {
@@ -250,4 +252,3 @@
     "Other"
   ]
 }
-
