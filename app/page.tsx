@@ -6,33 +6,33 @@ import HighlightsSection from "@/components/landing/HighlightsSection";
 import SafetySection from "@/components/landing/SafetySection";
 import AboutSection from "@/components/landing/AboutSection";
 import CTASection from "@/components/landing/CTASection";
+import AnimatedDivBreathing from "@/components/ui/animated-div-breathing";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Aharai",
+  description: "Aharai"
+};
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-[#fcd839] selection:text-black">
+    <main className='min-h-screen bg-black text-white selection:bg-[#fcd839] selection:text-black'>
       <Navbar />
       <HeroSection />
-      
-      {/* Anchor IDs for Navigation */}
-      <div id="spirit">
-        <WhyUsSection />
-      </div>
-      
-      <div id="journey">
-        <ProgramTimeline />
-      </div>
-      
-      <div id="safety">
-        <SafetySection />
-      </div>
-      
-      <div id="about">
-        <AboutSection />
-      </div>
-      
-      <div id="apply">
-        <CTASection />
-      </div>
+
+      <WhyUsSection />
+
+      <ProgramTimeline />
+
+      <AnimatedDivBreathing>
+        <HighlightsSection />
+      </AnimatedDivBreathing>
+
+      <SafetySection />
+
+      <AboutSection />
+
+      <CTASection />
     </main>
   );
 }
